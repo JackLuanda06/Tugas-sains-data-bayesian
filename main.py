@@ -26,7 +26,7 @@ persen_ramai = prior[idx_ramai] * 100
 persen_sepi = prior[idx_sepi] * 100
 rasio = prior[idx_ramai] / prior[idx_sepi]
 
-st.title("PUBG Developer Map Analytics Dashboard")
+st.title("Analisis Map PUBG untuk Developer")
 st.caption("Analisis distribusi pemain dan rekomendasi keputusan menggunakan model Gaussian Naive Bayes.")
 
 # 1. Ringkasan Metrik Utama
