@@ -5,9 +5,9 @@ import streamlit as st
 
 st.set_page_config(page_title="Uji Prediksi Map PUBG Mobile", layout="centered")
 
-# Memuat parameter model dari model.json
+# Memuat parameter model dari model.json di folder utama (naik 1 tingkat dari folder pages/)
 base_dir = os.path.dirname(os.path.abspath(__file__))
-model_path = os.path.join(base_dir, "model.json")
+model_path = os.path.join(os.path.dirname(base_dir), "model.json")
 
 with open(model_path, "r") as f:
     model_data = json.load(f)
