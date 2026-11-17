@@ -97,16 +97,16 @@ df_pola = pd.DataFrame({
     ],
     kelas[0]: [
         f"{prior[0]*100:.2f}%",
-        f"#{theta[0][0]:.0f}",
-        f"#{theta[0][3]:.0f}",
+        f"{theta[0][0]:.0f}",
+        f"{theta[0][3]:.0f}",
         f"{theta[0][1]:,.0f}",
         f"{theta[0][2]:,.0f}",
         f"{theta[0][6]:.0f} detik ({theta[0][6]/60:.1f} menit)"
     ],
     kelas[1]: [
         f"{prior[1]*100:.2f}%",
-        f"#{theta[1][0]:.0f}",
-        f"#{theta[1][3]:.0f}",
+        f"{theta[1][0]:.0f}",
+        f"{theta[1][3]:.0f}",
         f"{theta[1][1]:,.0f}",
         f"{theta[1][2]:,.0f}",
         f"{theta[1][6]:.0f} detik ({theta[1][6]/60:.1f} menit)"
