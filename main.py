@@ -33,14 +33,14 @@ st.caption("Analisis distribusi pemain dan rekomendasi keputusan menggunakan mod
 col1, col2, col3 = st.columns(3)
 with col1:
     st.metric(
-        label="Map Paling Ramai (High Load)",
+        label="Map Orang Jago (Paling Rame)",
         value=f"{map_ramai} ({persen_ramai:.2f}%)",
         delta="Prioritas Optimasi Performa",
         delta_color="normal"
     )
 with col2:
     st.metric(
-        label="Map Sepi Pemain (Low Traffic)",
+        label="Map Bot (Paling Sepi)",
         value=f"{map_sepi} ({persen_sepi:.2f}%)",
         delta="Prioritas Event & Insentif",
         delta_color="inverse"
@@ -67,7 +67,7 @@ with col_grafik:
     st.bar_chart(df_distribusi, height=320)
 
 with col_aksi:
-    st.subheader("Rekomendasi Aksi untuk Developer")
+    st.subheader("Saran Buat Developer")
 
     st.warning(
         f"**1. Optimasi Teknis & Server di {map_ramai} ({persen_ramai:.2f}%)**\n"
@@ -89,8 +89,8 @@ st.subheader("Perbandingan Pola Pertempuran Antar Map (Rata-rata Dataset)")
 df_pola = pd.DataFrame({
     "Indikator Pertempuran": [
         "Proporsi Trafik Pertandingan (%)",
-        "Rata-rata Peringkat Finish Pembunuh (#)",
-        "Rata-rata Peringkat Finish Korban (#)",
+        "Kebanyakan Orang Mulai Perang Kalo Udah (#)",
+        "Jika Kalah Kebanyakan Orang Akan di (#)",
         "Pusat Keramaian Koordinat X",
         "Pusat Keramaian Koordinat Y",
         "Rata-rata Waktu Terjadi Kill (Detik)"
