@@ -89,8 +89,8 @@ st.subheader("Perbandingan Pola Pertempuran Antar Map (Rata-rata Dataset)")
 df_pola = pd.DataFrame({
     "Indikator Pertempuran": [
         "Proporsi Trafik Pertandingan (%)",
-        "Kebanyakan Orang Mulai Perang Kalo Udah (#)",
-        "Jika Kalah Kebanyakan Orang Akan di (#)",
+        "Kebanyakan Orang Jago Bertahan Sampe Diposisi (Alive)",
+        "Kebanyakan Orang Cupu Mati Ada DIposisi (Alive)",
         "Pusat Keramaian Koordinat X",
         "Pusat Keramaian Koordinat Y",
         "Rata-rata Waktu Terjadi Kill (Detik)"
