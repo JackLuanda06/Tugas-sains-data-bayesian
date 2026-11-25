@@ -1,9 +1,18 @@
 {
-  "classes": [
+  "kelas": [
     "ERANGEL",
     "MIRAMAR"
   ],
-  "class_prior": [
+  "fitur": [
+    "killer_placement",
+    "killer_position_x",
+    "killer_position_y",
+    "victim_placement",
+    "victim_position_x",
+    "victim_position_y",
+    "time"
+  ],
+  "prior": [
     0.5,
     0.5
   ],
